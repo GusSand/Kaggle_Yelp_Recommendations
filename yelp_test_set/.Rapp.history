@@ -1,0 +1,196 @@
+install.packages(ggplot2)
+install.packages("ggplot2")
+contour(volcano)
+persp(volcano)
+persp(volcano, expand=0.2)
+head(volcano)
+summary(volcano)
+df <- read.csv('http://heypodo.com/public/et/pace.csv')
+df <- read.csv('http://heypodo.com/public/etc/pace.csv')
+head(df)
+335/8
+head(df)
+library(MASS)
+data(crabs)
+data(mammals)
+data(wtloss)
+library
+library()
+head(wtloss)
+summary(wtloss)
+ggplot(wtloss, aes(y=days, x=weight)) + geom_point()
+library(ggplot2)
+ggplot(wtloss, aes(y=days, x=weight)) + geom_point()
+ggplot(wtloss, aes(y=Days, x=Weight)) + geom_point()
+ggplot(wtloss, aes(y=Days, x=Weight)) + geom_point() + geom_smooth(method="lm")
+head(crabs)
+ggplot(crabs, aes(y=FL, x=RW)) + geom_point() + geom_smooth(method="lm")
+mean(FL)
+mean(crabs.FL)
+mean(crabs[FL])
+mean(crabs$FL)
+library(caTools)
+install.packages(catools)
+install.packages("catools")
+install.packages("caTools")
+pwd
+pwd()
+ls
+cls
+read.table("last35_2.tsv", header="TRUE")
+read.table("last35_2.tsv", header=TRUE)
+read.table("last35_2.tsv")
+df <- read.table("last35_2.tsv", sep=",")
+head df
+summary df
+df <- read.table("last35_3", sep=",")
+summary(df)
+head(df)
+ggplot(df, aes(y=total, x=date)) + geom_point() + geom_smooth(method="lm")
+df <- read.table("last35_3", sep=",", header=yes)
+df <- read.table("last35_3", sep=",", header=true)
+df <- read.table("last35_3", sep=",", header=TRUE)
+ggplot(df, aes(y=total, x=date)) + geom_point() + geom_smooth(method="lm")
+ggplot(df, aes(y=V3, x=V2)) + geom_point() + geom_smooth(method="lm")
+help.start()
+?knn
+?kn
+?k
+/
+?
+q
+?kNN
+help knn
+help knn()
+?knn()
+install.packages('DMwR')
+library(DMwR)
+data(algae)
+summary(algae)
+hist(algae$mxPH, prob=T)
+?hist
+plot(algae$NH4, xlab= '')
+abline(h=mean(algae$NH4, na.rm =T), lty=1)
+?abline
+abline(h=mean(algae$NH4, na.rm =T) + sd(algae$NH4, na.rm = T), lty =2)
+abline(h=mean(algae$NH4, na.rm =T), lty=3)
+?lm
+lm(P04 ~ oP04, data=algae)
+lm(PO4 ~ oPO4, data=algae)
+clean.algae <- knnImputation(algae, k=10)
+?knnImputation
+head(algae)
+lm.a1 <- lm(a1 ~ ., data = clean.algae[, 1:12])
+summary(lm.a1)
+anova(lm.a1)
+final.lm <- step(lm.a1)
+?step
+head(algae)
+nrow(algae)
+install.packages('DMwR')
+install.packages(E1071)
+install(E1071)
+install.packages('randomForest', repos = "http://cran.us.r-project.org/")
+data(iris)
+randomForest(iris[,-5], iris[,5], ntree=10)
+library(randomforest)
+library("randomforest")
+library(randomforest)
+install.packages('randomForest', repos = "http://cran.us.r-project.org/")
+library(randomForest)
+data(iris)
+randomForest(iris[,-5], iris[,5], ntree=10)
+randomForest(iris[,-5], iris[,5], ntree=100)
+randomForest(iris[,-5], iris[,5], ntree=1000)
+randomForest(iris[,-5], iris[,5], ntree=10000)
+authorship <- read.csv('http://people.stern.nyu.edu/jsimonof/AnalCatData/Data/Comma_separated/authorship.csv')
+head(autorship)
+head(authorship)
+authorship$randu = runif(841, 0,1)
+authorship.train = authorship[authorship$randu < .4,]
+authorship.test = authorship[authorship$randu >= .4,]
+authorship.train
+authorship.model.rf = randomForest(#
+  Author ~ a + all + also + an + any + are + as + at + be + been + but + by + can + do +#
+  down + even + every + for. + from + had + has + have + her + his + if. + in. + into +#
+  is + it + its + may + more + must + my + no + not + now + of + on + one + only + or +#
+  our + should + so + some + such + than + that + the + their + then + there + things +#
+  this + to + up + upon + was + were + what + when + which + who + will + with + would + your,#
+  data=authorship.train, ntree=5000, mtry=15, importance=TRUE)
+authorship.test$pred.author.rf = predict(authorship.model.rf, authorship.test, type="response")
+table(authorship.test$Author, authorship.test$pred.author.rf)
+prop.table(table(authorship.test$Author, authorship.test$pred.author.rf),1)
+plot(authorship.model.rf)
+k <- 1
+getTree(authorship.model.rf, k)
+help gettree
+getree ?
+quit
+getree ?
+q
+help gettree
+?getree
+??getree
+library(ggplot2)
+set.seed(1234)
+data(iris)
+summary(iris)
+x <- data(iris)
+xoriginal <- t(as.matrix(recorded.data))
+xoriginal <- t(as.matrix(x))
+rm <- rowMeans(xoriginal)
+head(x)
+head(iris)
+x <- data(iris) - Species
+matrix <- as.matrix(iris, -5)
+head(matrix)
+matrix <- as.matrix(iris, -5)
+head(matrix)
+knn
+which knn
+? knn
+??knn
+ls
+pwd
+pwd
+pwd()
+business <- read.csv('yelp_test_set_business.csv, header=T')
+pwd()
+cwd()
+getwd()
+business <- read.csv('yelp_test_set_business.csv', header=T)
+head(business)
+head business
+head (business)
+review <- read.csv('yelp_test_set_review.csv', header=T)
+head(review)
+summary(review)
+plot(business)
+fit <- lm(Y ~., data=business)
+summary(business)
+nrow(business)
+summary(review)
+plot(review)
+fit <- lm(Y ~., data=review)
+fit <- lm(Y ~., data=review)
+help xtabs
+xtabs ?
+quit()
+head(review)
+summary(review)
+vars
+var
+which
+list
+ls
+ls()
+summary(review)
+review$text <- NULL
+summary(review)
+review$user_id <- NULL
+summary(review)
+review$business_id <- NULL
+ls
+summary(review)
+review$review_id <- NULL
+summary(review)
